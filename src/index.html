@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <title>Twitter-Clone</title>
+  </head>
+  <body class="bg-black">
+    <div class="flex bg-black text-white h-full">
+      <!-- first div  -->
+
+      <div
+        class="first flex flex-col gap-3  text-2xl font-semibold fixed top-0 left-0 md-hidden"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          class="mx-20 mt-2 invert w-9 h-9 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+        >
+          <g>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            ></path>
+          </g>
+        </svg>
+        <div type="submit" class="mx-20 rounded-full grow-0 w-fit px-4 py-2 hover:cursor-pointer hover:bg-slate-900">
+          <span class="material-symbols-outlined mr-2 "> home </span> Home
+        </div>
+        <div class="mx-20 my-0 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2"> search </span>
+          <a type="button" class="rounded-full">Explore</a>
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined font-bold mr-2">
+            notifications
+          </span>
+          Notfications
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2"> mail </span> Messages
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2"> edit_square </span> Grok
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2"> article </span> Lists
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2"> bookmark </span>
+          Bookmarks
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2"> group </span>
+          Communities
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2">
+            workspace_premium
+          </span>
+          Premium
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2"> person </span> Profile
+        </div>
+        <div class="mx-20 rounded-full w-fit hover:bg-gray-900 px-4 py-2 hover:cursor-pointer">
+          <span class="material-symbols-outlined mr-2"> more </span>
+          More
+        </div>
+
+        <button
+          type="submit"
+          class="mx-20 rounded-full bg-sky-500 text-white pt-2 pb-2 pr-3 pl-3 text-xl text-center hover:bg-sky-600 w-40 h-11"
+        >
+          Post
+        </button>
+        <div class="profile mx-20 mt-4 flex gap-5">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Od6iGYyz-QRYYALx-g14Veob-fyasKPiZROrIP_dIC6-uVcSzZYVzwE0Q4PXu8ik6Vk&usqp=CAU"
+            alt="contact-pic"
+            class="rounded-full object-cover w-12 h-12"
+          />
+          <div class="text-base">
+            <p class="font-bold">Abhay Pratap Singh</p>
+            <p class="text-slate-400 font-normal">@TargetX25</p>
+          </div>
+        </div>
+      </div>
+      <div class="first flex border-gray-800 border-r flex-col gap-6 w-7/12 text-2xl font-semibold"></div>
+      <!-- Second Div -->
+      <div class="second w-full">
+        <div class="headers flex flex-row justify-around border-b border-gray-800 ">
+          <div class="py-4 hover:bg-gray-900 w-full flex flex-row justify-center items-center">
+            <button class=" font-normal text-slate-500 text-center focus:text-white focus:font-bold focus:outline-none w-full"  type="submit" autofocus>For you</button>
+          </div>
+          <div class="py-4 hover:bg-gray-900 w-full flex flex-row justify-center items-center">
+            <button class=" font-normal text-slate-500 focus:text-white focus:font-bold w-full"  type="submit">Following</button>
+          </div>
+        </div>
+        <div class="post-input flex flex-row gap-4 my-4 ml-4">
+          <div>
+            <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Od6iGYyz-QRYYALx-g14Veob-fyasKPiZROrIP_dIC6-uVcSzZYVzwE0Q4PXu8ik6Vk&usqp=CAU"
+            alt="contact-pic"
+            class="rounded-full object-cover w-12 h-12"
+          />
+          </div>
+          <input type="text" class="bg-black w-full focus:outline-none text-xl " placeholder="What is happening?!" /> 
+        </div>
+        <div class="iconsx  flex flex-row  justify-between my-5 ml-8 pl-5">
+          <div class="icons text-sky-600 flex flex-row gap-3">
+            <span class="material-symbols-outlined hover:cursor-pointer ">
+              image
+              </span>
+              <span class="material-symbols-outlined hover:cursor-pointer ">
+                gif_box
+                </span>
+                <span class="material-symbols-outlined hover:cursor-pointer ">
+                  ballot
+                  </span>
+                  <span class="material-symbols-outlined hover:cursor-pointer ">
+                    sentiment_satisfied
+                    </span>
+                    <span class="material-symbols-outlined hover:cursor-pointer ">
+                      calendar_clock
+                      </span>
+                      <span class="material-symbols-outlined hover:cursor-pointer ">
+                        location_on
+                        </span>
+          </div>
+          <button
+            type="submit"
+            class="rounded-full mr-3 bg-sky-500 text-white font-semibold text-sm text-center hover:bg-sky-600 w-20 h-8"
+          >
+            Post
+          </button>
+        </div>
+        <div class="shows-section text-sky-500 w-full text-center font-normal border-gray-800 border-y py-4">
+            <a href="#" class="text-sky-600">Show 56 posts</a>
+        </div>
+        <div class="posts ">
+          <div class="individual border-b border-gray-800 py-2">
+            <div class="avatr-details flex flex-row gap-5 mt-2">
+              <img
+              src="https://i.pinimg.com/736x/22/f2/1b/22f21b1924af7a93417698a6ea0966e0.jpg"
+              alt="contact-pic"
+              class="rounded-full object-cover w-12 h-12 ml-2"/>
+  
+              <div class="details ">
+                <div class=" flex flex-row gap-2">
+                  <p class="font-semibold ">Eren Yeager </p>
+                  <p class="text-gray-600 ">@attack_erin </p>
+                  <p class="text-gray-600 ">. 22h</p>
+                </div>
+                <p>On My Way to start the rumbling guys! I Know You Guys Support me</p>
+                <img
+                 src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4720f841-da03-4a14-9b9f-c9c5449d7ae9/dexx4ls-6be78f1b-3fc4-4580-98df-acd2ead85527.jpg/v1/fill/w_1280,h_1280,q_75,strp/rumbling_eren_by_recmg_dexx4ls-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzQ3MjBmODQxLWRhMDMtNGExNC05YjlmLWM5YzU0NDlkN2FlOVwvZGV4eDRscy02YmU3OGYxYi0zZmM0LTQ1ODAtOThkZi1hY2QyZWFkODU1MjcuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Z0sWkwpksNW2fZ_LE9XCKS3hYUtYlXs6z6eulUbf4aA" alt="eren-img"
+                 class="rounded-xl w-4/5 mt-4"/>
+  
+                 <div class="flex flex-row gap-12 mt-5">
+                  <button class="group text-gray-600 hover:text-sky-500 text-sm">
+                    <span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-sky-500" style=" font-size: 17px;">
+                      mode_comment
+                    </span>
+                    56.9K
+                  </button>
+                    <button class= "group text-gray-600  hover:text-green-500 text-sm"><span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-green-500" style=" font-size: 19px;">
+                      sync
+                      </span>120.86K</button>
+                      <button class= " group text-gray-600 hover:text-pink-500 text-sm"><span class=" inline material-symbols-outlined text-gray-600 mr-1 group-hover:text-pink-500" style=" font-size: 17px;">
+                        favorite
+                        </span>10.75K</button>
+                        <button class=" group text-gray-600 hover:text-sky-500 text-sm "><span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-sky-500" style=" font-size: 17px;">
+                          bar_chart_4_bars
+                          </span>736.56K</button>
+                 </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="individual border-b border-gray-800 py-2">
+            <div class="avatr-details flex flex-row gap-5 mt-2">
+              <img
+              src="https://i.pinimg.com/736x/7d/8b/0b/7d8b0bdc5ffe7f503505f7172f7e2b75.jpg"
+              alt="contact-pic"
+              class="rounded-full object-cover w-12 h-12 ml-2"/>
+  
+              <div class="details ">
+                <div class=" flex flex-row gap-2">
+                  <p class="font-semibold ">Invincible </p>
+                  <p class="text-gray-600 ">@iam_invincible </p>
+                  <p class="text-gray-600 ">. 15h</p>
+                </div>
+                <p>Just Chilling on Mars Guys...Ring me up if there is any Problem on earth!</p>
+                <img
+                 src="https://64.media.tumblr.com/d72561823512dfba37a3470096a90a00/3e192f5540de162f-cf/s1280x1920/c9a9609783fed512a8c107ea1191cce6b48c288c.jpg" alt="invincible-img"
+                 class="rounded-xl w-4/5 mt-4"/>
+  
+                 <div class="flex flex-row gap-12 mt-5">
+                  <button class="group text-gray-600 hover:text-sky-500 text-sm">
+                    <span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-sky-500" style=" font-size: 17px;">
+                      mode_comment
+                    </span>
+                    1.2K
+                  </button>
+                    <button class= "group text-gray-600  hover:text-green-500 text-sm"><span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-green-500" style=" font-size: 19px;">
+                      sync
+                      </span>10.2K</button>
+                      <button class= " group text-gray-600 hover:text-pink-500 text-sm"><span class=" inline material-symbols-outlined text-gray-600 mr-1 group-hover:text-pink-500" style=" font-size: 17px;">
+                        favorite
+                        </span>27.8K</button>
+                        <button class=" group text-gray-600 hover:text-sky-500 text-sm "><span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-sky-500" style=" font-size: 17px;">
+                          bar_chart_4_bars
+                          </span>78.9K</button>
+                 </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="individual border-b border-gray-800 py-2">
+            <div class="avatr-details flex flex-row gap-5 mt-2">
+              <img
+              src="https://thicc-uwu.mywaifulist.moe/waifus/satoru-gojo-sorcery-fight/bOnNB0cwHheCCRGzjHLSolqabo41HxX9Wv33kfW7.jpg?class=thumbnail"
+              alt="contact-pic"
+              class="rounded-full object-cover w-12 h-12 ml-2"/>
+  
+              <div class="details ">
+                <div class=" flex flex-row gap-2">
+                  <p class="font-semibold ">Satoru Gojo</p>
+                  <p class="text-gray-600 ">@master_gojo </p>
+                  <p class="text-gray-600 ">. 9h</p>
+                </div>
+                <p>Who needs coffee when you have cursed energy coursing through your veins? #CursedButNotTired</p>
+                <img
+                 src="https://dthezntil550i.cloudfront.net/rl/latest/rl2103190740050210019720804/1280_960/97d80555-5a6e-46f3-a24a-845a27da4846.jpg" alt="gojo-img"
+                 class="rounded-xl w-4/5 mt-4"/>
+  
+                 <div class="flex flex-row gap-12 mt-5">
+                  <button class="group text-gray-600 hover:text-sky-500 text-sm">
+                    <span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-sky-500" style=" font-size: 17px;">
+                      mode_comment
+                    </span>
+                    6.7K
+                  </button>
+                    <button class= "group text-gray-600  hover:text-green-500 text-sm"><span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-green-500" style=" font-size: 19px;">
+                      sync
+                      </span>9.1K</button>
+                      <button class= " group text-gray-600 hover:text-pink-500 text-sm"><span class=" inline material-symbols-outlined text-gray-600 mr-1 group-hover:text-pink-500" style=" font-size: 17px;">
+                        favorite
+                        </span>17.8K</button>
+                        <button class=" group text-gray-600 hover:text-sky-500 text-sm "><span class="material-symbols-outlined text-gray-600 mr-1 group-hover:text-sky-500" style=" font-size: 17px;">
+                          bar_chart_4_bars
+                          </span>80.3K</button>
+                 </div>
+  
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <!-- Third  Div -->
+      <div
+        class="third w-3/4 flex flex-col items-center border-l border-gray-800"
+      >
+        <input
+          type="text"
+          class="grow-0 focus:outline-none focus:ring focus:ring-sky-700 rounded-full bg-slate-900 text-slate-700 h-10 py-4 px-4 my-4 w-3/4"
+          placeholder="Search"
+        />
+        <div
+          class="infos flex flex-col rounded-xl grow-0 w-3/4 h-40 px-4 py-2 my-4 border-gray-800 border"
+        >
+          <p class="font-bold text-xl my-2">Subscribe to Premium</p>
+          <p class="text-sm text-wrap mb-1">
+            Subscribe to unlock new features and if eligible, recieve a share of
+            ad revenue
+          </p>
+          <button
+            type="submit"
+            class="my-2 grow-0 bg-sky-600 rounded-full text-white pt-1 pb-1 pr-2 pl-2 text-base text-center font-semibold hover:bg-sky-700 w-32 h-8"
+          >
+            Subscribe
+          </button>
+        </div>
+        <div
+          class="whats-new flex flex-col rounded-xl grow-0 w-3/4 py-4 px-4 my-4 border-gray-800 border"
+        >
+          <p class="font-bold text-xl mb-4">What's happening</p>
+          <div class="holder flex flex-col gap-2">
+            <div class="items">
+              <p class="text-gray-600">Trending in India</p>
+              <p class="text-white font-bold">#NEETStudents</p>
+              <p class="text-gray-600">638K Posts</p>
+            </div>
+            <div class="items">
+              <p class="text-gray-600">Education.Trending in India</p>
+              <p class="text-white font-bold">#UPSC</p>
+              <p class="text-gray-600">12.86K Posts</p>
+            </div>
+            <div class="items">
+              <p class="text-gray-600">Politics-Trending</p>
+              <p class="text-white font-bold">#Bill2024</p>
+              <p class="text-sky-600 text-sm">
+                Trending With #Inflation, #MiddleClass
+              </p>
+            </div>
+            <div class="items">
+              <p class="text-gray-600">Trending in India</p>
+              <p class="text-white font-bold">#MSDhoni</p>
+              <p class="text-gray-600">77.7K Posts</p>
+            </div>
+
+            <a href="#" class="text-sky-600">Show More</a>
+          </div>
+        </div>
+        <div
+          class="follow-bruh flex flex-col rounded-xl grow-0 w-3/4 py-4 px-4 my-4 border-gray-800 border"
+        >
+          <p class="font-bold text-xl mb-4">Who to Follow</p>
+          <div class="flex flex-col gap-4">
+            <div class="profile flex flex-row gap-5 justify-between">
+              <img
+                src="https://i.pinimg.com/474x/2e/5b/a6/2e5ba6addb9fc862748e1dd88c51f8e0.jpg"
+                alt="contact-pic"
+                class="rounded-full object-cover w-12 h-12"
+              />
+              <div class="text-base">
+                <p class="font-bold">Trevor Belmont</p>
+                <p class="text-slate-400 font-normal">@Trevor69</p>
+              </div>
+              <button class="bg-white text-black font-semibold rounded-full text-md w-18 h-7 mt-2 pb-5 px-3 text-center  hover:bg-slate-200">Follow</button>
+            </div>
+            <div class="profile flex flex-row gap-5 justify-between">
+              <img
+                src="https://preview.redd.it/hilzdevbt0yb1.png?width=640&crop=smart&auto=webp&s=689b66efbe5b2fbfe1e82b1de6ea6ee962310242"
+                alt="contact-pic"
+                class="rounded-full object-cover w-12 h-12"
+              />
+              <div class="text-base">
+                <p class="font-bold">Sypha Belnades</p>
+                <p class="text-slate-400 font-normal">@Sypha790</p>
+              </div>
+              <button class="bg-white text-black font-semibold rounded-full text-md w-18 h-7 mt-2 pb-5 px-3 text-center hover:bg-slate-200">Follow</button>
+            </div>
+            <div class="profile flex flex-row gap-5 justify-between">
+              <img
+                src="https://i.pinimg.com/736x/22/f2/1b/22f21b1924af7a93417698a6ea0966e0.jpg"
+                alt="contact-pic"
+                class="rounded-full object-cover w-12 h-12"
+              />
+              <div class="text-base">
+                <p class="font-bold">Erin Yeager</p>
+                <p class="text-slate-400 font-normal">@attack_erin</p>
+              </div>
+              <button class="bg-white text-black font-semibold rounded-full text-md w-18 h-7 mt-2 pb-5 px-3 text-center hover:bg-slate-200">Follow</button>
+            </div> 
+            <a  href="#" class="text-sky-600">Show More</a>
+
+        </div>
+      </div>
+
+      <div class="text-gray-600 text-sm">
+        <p>@TargetX25 - 2024 - A Twitter Clone</p>
+      </div>
+    </div>
+  </body>
+</html>
